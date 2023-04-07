@@ -4,6 +4,7 @@ import { Outlet } from "react-router";
 const Main = () => {
   return (
     <>
+      hi
       <Outlet></Outlet>
     </>
   );

@@ -2,6 +2,9 @@ import { Button, Typography } from "@material-tailwind/react";
 import React, { useState } from "react";
 import classNames from "classnames";
 import CategoryChild1 from "./CategoryChild1";
+import CategoryChild2 from "./CategoryChild2";
+import CategoryChild3 from "./CategoryChild3";
+import CategoryChild4 from "./CategoryChild4";
 
 const Category = () => {
   const [activeButton, setActiveButton] = useState(1);
@@ -67,7 +70,15 @@ const Category = () => {
             </Button>
           </span>
         </div>
-        <CategoryChild1></CategoryChild1>
+        {activeButton === 1 ? (
+          <CategoryChild1></CategoryChild1>
+        ) : activeButton === 2 ? (
+          <CategoryChild3></CategoryChild3>
+        ) : activeButton === 3 ? (
+          <CategoryChild2></CategoryChild2>
+        ) : (
+          <CategoryChild4></CategoryChild4>
+        )}
       </div>
     </div>
   );

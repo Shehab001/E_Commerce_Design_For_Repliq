@@ -6,13 +6,13 @@ import { Button } from "@material-tailwind/react";
 
 const Carousal = () => {
   var settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: false,
   };
   return (
     <div className="-mt-10">

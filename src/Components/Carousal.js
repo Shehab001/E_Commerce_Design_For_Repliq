@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Button } from "@material-tailwind/react";
+import { motion } from "framer-motion";
 
 const Carousal = () => {
   var settings = {
@@ -20,24 +21,31 @@ const Carousal = () => {
       <Slider {...settings}>
         <div className="bg1 h-96 ">
           <div className="ml-10">
-            <div className="col-span-2 text-start ml-10">
-              <Button
-                className="text-base font-semibold mt-16 tracking-widest	"
-                size="sm"
-              >
-                Mobile
-              </Button>
-              <p className=" pb-3 text-5xl font-bold my-5 tracking-wider">
-                Best mobile options<br></br> at any resolutions.
-              </p>
+            <motion.div
+              initial={{ x: -150 }}
+              animate={{ x: 0 }}
+              transition={{ duration: 1 }}
+            >
+              <div className="col-span-2 text-start ml-10">
+                <Button
+                  className="text-base font-semibold mt-16 tracking-widest	"
+                  size="sm"
+                >
+                  Mobile
+                </Button>
+                <p className=" pb-3 text-5xl font-bold my-5 tracking-wider">
+                  Best mobile options<br></br> at any resolutions.
+                </p>
 
-              <Button
-                className="text-base font-semibold tracking-widest"
-                variant="outlined"
-              >
-                Learn More
-              </Button>
-            </div>
+                <Button
+                  className="text-base font-semibold tracking-widest"
+                  variant="outlined"
+                >
+                  Learn More
+                </Button>
+              </div>
+            </motion.div>
+
             <div className="col-span-3 p-5 "></div>
           </div>
         </div>

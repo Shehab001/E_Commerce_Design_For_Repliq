@@ -5,7 +5,8 @@ import Home from "../Components/Home";
 import LogIn from "../Components/LogIn";
 import Onboard from "../Components/Onboard";
 import Payment from "../Components/Payment";
-import Products from "../Components/Products";
+import ProductList from "../Components/ProductList";
+import Products from "../Components/ProductList";
 import SignUp from "../Components/SignUp";
 import Main from "../Layout/Main";
 
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/products",
-        element: <Products></Products>,
+        element: <ProductList></ProductList>,
       },
       // {
       //   path: "/singleservice/:id",

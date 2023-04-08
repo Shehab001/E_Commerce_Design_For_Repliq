@@ -20,11 +20,11 @@ import { Tilt } from "react-tilt";
 const Onboard = () => {
   return (
     <div className="mx-10 my-20">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3  grid-cols-1 gap-4">
         <Tilt options={{ max: 15, speed: 300, scale: 1 }}>
           {" "}
           <div>
-            <Card className="max-w-[24rem] overflow-hidden rounded-none">
+            <Card className="max-w-[24rem] mx-auto overflow-hidden rounded-none">
               <CardHeader
                 floated={false}
                 shadow={false}
@@ -37,7 +37,7 @@ const Onboard = () => {
                 <Typography variant="h4" color="blue-gray">
                   Company Name
                 </Typography>
-                <div className="w-72 mt-10 mx-auto">
+                <div className="w-full mt-10 mx-auto">
                   <Input label="Company" />
                 </div>
               </CardBody>
@@ -47,7 +47,7 @@ const Onboard = () => {
 
         <Tilt options={{ max: 15, speed: 300, scale: 1 }}>
           <div>
-            <Card className="max-w-[24rem] overflow-hidden rounded-none">
+            <Card className="max-w-[24rem] mx-auto overflow-hidden rounded-none">
               <CardHeader
                 floated={false}
                 shadow={false}
@@ -60,7 +60,7 @@ const Onboard = () => {
                 <Typography variant="h4" color="blue-gray">
                   Select Industry
                 </Typography>
-                <div className="w-72 mt-10 mx-auto">
+                <div className="w-full mt-10 mx-auto">
                   <Select
                     label="Select Version"
                     animate={{
@@ -82,7 +82,7 @@ const Onboard = () => {
 
         <Tilt options={{ max: 15, speed: 300, scale: 1 }}>
           <div>
-            <Card className="max-w-[24rem] overflow-hidden rounded-none">
+            <Card className="max-w-[24rem] mx-auto overflow-hidden rounded-none">
               <CardHeader
                 floated={false}
                 shadow={false}

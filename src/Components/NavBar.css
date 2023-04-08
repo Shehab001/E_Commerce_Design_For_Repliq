@@ -1,0 +1,17 @@
+.bg1 {
+  background-image: url(../Assets/s3-960x450h.png);
+  background-repeat: no-repeat;
+  background-size: 100% 384px;
+}
+
+.bg2 {
+  background-image: url(../Assets/s2-960x450h.png);
+  background-repeat: no-repeat;
+  background-size: 100% 384px;
+}
+
+.bg3 {
+  background-image: url(../Assets/s1-960x450h.png);
+  background-repeat: no-repeat;
+  background-size: 100% 384px;
+}

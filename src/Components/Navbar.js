@@ -24,13 +24,13 @@ export default function Nav() {
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col  gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" variant="small" color="blue-gray" className="p-1 ">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="flex items-center font-bold"
           style={{ letterSpacing: "3px" }}
         >
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -38,13 +38,13 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a
-          href="#"
+        <Link
+          to="/products"
           className="flex items-center font-bold"
           style={{ letterSpacing: "3px" }}
         >
           Products
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -52,13 +52,13 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a
-          href="#"
+        <Link
+          to="onboard"
           className="flex items-center font-bold"
           style={{ letterSpacing: "3px" }}
         >
-          Inventory
-        </a>
+          Onboard
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -66,13 +66,28 @@ export default function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a
-          href="#"
+        <Link
+          to="cart"
           className="flex items-center font-bold"
           style={{ letterSpacing: "3px" }}
         >
           Cart
-        </a>
+        </Link>
+      </Typography>
+
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link
+          to="payment"
+          className="flex items-center font-bold"
+          style={{ letterSpacing: "3px" }}
+        >
+          Payment
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -107,15 +122,13 @@ export default function Nav() {
     <div className="overflow-hidden pb-10">
       <Navbar className="sticky inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4 ">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <Typography
-            as="a"
-            href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
-          >
-            <img
-              src="https://res.cloudinary.com/dc9bjecdl/image/upload/v1680912534/journal-logo1x-185x32_nukuni.png"
-              alt="icon"
-            ></img>
+          <Typography as="a" className="mr-4 cursor-pointer py-1.5 font-medium">
+            <Link to="/">
+              <img
+                src="https://res.cloudinary.com/dc9bjecdl/image/upload/v1680912534/journal-logo1x-185x32_nukuni.png"
+                alt="icon"
+              ></img>
+            </Link>
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>

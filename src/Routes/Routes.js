@@ -1,6 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
+import Cart from "../Components/Cart";
+import Error from "../Components/Error";
 import Home from "../Components/Home";
 import LogIn from "../Components/LogIn";
+import Onboard from "../Components/Onboard";
+import Payment from "../Components/Payment";
+import Products from "../Components/Products";
 import SignUp from "../Components/SignUp";
 import Main from "../Layout/Main";
 
@@ -18,30 +23,26 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <SignUp></SignUp>,
       },
-      // {
-      //   path: "/blogs",
-      //   element: <Blog></Blog>,
-      // },
+      {
+        path: "/onboard",
+        element: <Onboard></Onboard>,
+      },
       {
         path: "/login",
         element: <LogIn></LogIn>,
       },
-      // {
-      //   path: "/myreview",
-      //   element: (
-      //     <Private>
-      //       <MyReview></MyReview>
-      //     </Private>
-      //   ),
-      // },
-      // {
-      //   path: "/addservicee",
-      //   element: <SingleService></SingleService>,
-      // },
-      // {
-      //   path: "/addservice",
-      //   element: <AddService></AddService>,
-      // },
+      {
+        path: "/cart",
+        element: <Cart></Cart>,
+      },
+      {
+        path: "/payment",
+        element: <Payment></Payment>,
+      },
+      {
+        path: "/products",
+        element: <Products></Products>,
+      },
       // {
       //   path: "/singleservice/:id",
       //   element: (
@@ -54,10 +55,10 @@ const router = createBrowserRouter([
       //       `https://travel-site-backend.vercel.app/singleservice/${params.id}`
       //     ),
       // },
-      // {
-      //   path: "*",
-      //   element: <Error></Error>,
-      // },
+      {
+        path: "*",
+        element: <Error></Error>,
+      },
     ],
   },
 ]);

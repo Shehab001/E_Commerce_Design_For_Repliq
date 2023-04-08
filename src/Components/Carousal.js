@@ -15,11 +15,11 @@ const Carousal = () => {
     dots: false,
   };
   return (
-    <div className="-mt-10">
+    <div className="-mt-10 ">
       {" "}
       <Slider {...settings}>
-        <div className="bg1 h-96">
-          <div>
+        <div className="bg1 h-96 ">
+          <div className="ml-10">
             <div className="col-span-2 text-start ml-10">
               <Button
                 className="text-base font-semibold mt-16 tracking-widest	"
@@ -43,7 +43,7 @@ const Carousal = () => {
         </div>
         <div className="bg2 h-96 ">
           <div>
-            <div>
+            <div className="ml-10">
               <div className="col-span-2 text-start ml-10">
                 <Button
                   className="text-base font-semibold mt-16 tracking-widest	"
@@ -69,7 +69,7 @@ const Carousal = () => {
         </div>
         <div className="bg3 h-96">
           <div>
-            <div>
+            <div className="ml-10">
               <div className="col-span-2 text-start ml-10">
                 <Button
                   className="text-base font-semibold mt-16 tracking-widest	"

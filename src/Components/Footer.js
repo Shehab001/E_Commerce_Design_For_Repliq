@@ -2,7 +2,7 @@ import { Typography } from "@material-tailwind/react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white p-8 mt-10">
+    <footer className="w-full bg-white p-8 mt-20 border-t-2">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
         <img
           src="https://res.cloudinary.com/dc9bjecdl/image/upload/v1680912534/journal-logo1x-185x32_nukuni.png"

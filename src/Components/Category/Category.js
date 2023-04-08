@@ -23,7 +23,7 @@ const Category = () => {
   }
 
   return (
-    <div className="bg-[#f8f8f8]  text-center py-10 mt-10">
+    <div className="bg-[#f8f8f8]  text-center py-20 my-10">
       <div>
         <Typography className="font-bold md:text-5xl sm:text-3xl text-2xl mb-5">
           Why buy from us?
